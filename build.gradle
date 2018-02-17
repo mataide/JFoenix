@@ -24,6 +24,7 @@ subprojects {
         jcenter()
         mavenCentral()
         maven { url 'http://sevntu-checkstyle.github.com/sevntu.checkstyle/maven2' }
+        maven { url "https://jitpack.io" }
     }
 
     if (JavaVersion.current().isJava8Compatible()) {

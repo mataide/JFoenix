@@ -106,7 +106,7 @@ public abstract class ValidatorBase extends Parent {
      */
     protected void onEval() {
         Node control = getSrcControl();
-        listener.validated();
+        if(listener != null) listener.validated();
         if (hasErrors.get()) {
             control.pseudoClassStateChanged(PSEUDO_CLASS_ERROR, true);
 
